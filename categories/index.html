@@ -31,111 +31,29 @@
   <div id="app">
     <main class="content">
       <section class="outer">
-  <article id="page-" class="article article-type-page" itemscope
-  itemprop="blogPost" data-scroll-reveal>
-
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  categories
-</h1>
   
-
-    </header>
-    
-
-    
-
-    
-
-    <div class="article-entry" itemprop="articleBody">
+    <h1 class="page-type-title">Categories</h1>
+    <!-- <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a></li></ul> -->
+    <ul class="category-list">
       
-
-
+         
+          <a class="category-list-link" href="/categories/教程/" title="教程">
+            <li class="category-list-item">
+            教程<i>2</i>
+            </li>
+          </a>
+        
       
-
+         
+          <a class="category-list-link" href="/categories/杂谈/" title="杂谈">
+            <li class="category-list-item">
+            杂谈<i>1</i>
+            </li>
+          </a>
+        
       
-      
-      
-      <!-- 打赏 -->
-      
-      <div id="reward-btn">
-        打赏
-      </div>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/categories/index.html" data-id="ck63j4p0a0001pgo0bz6n27i7"
-        class="article-share-link">分享</a>
-      
-    </footer>
-
-  </div>
-
+      </ul>
   
-  
-
-  
-
-  
-  
-<!-- valine评论 -->
-<div id="vcomments-box">
-    <div id="vcomments">
-    </div>
-</div>
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
-<script>
-    new Valine({
-        el: '#vcomments',
-        notify: false,
-        verify: '',
-        app_id: '',
-        app_key: '',
-        path: window.location.pathname,
-        avatar: 'mp',
-        placeholder: '给我的文章加点评论吧~',
-        recordIP: true
-    });
-    const infoEle = document.querySelector('#vcomments .info');
-    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
-        infoEle.childNodes.forEach(function (item) {
-            item.parentNode.removeChild(item);
-        });
-    }
-</script>
-<style>
-    #vcomments-box {
-        padding: 5px 30px;
-    }
-
-    @media screen and (max-width: 800px) {
-        #vcomments-box {
-            padding: 5px 0px;
-        }
-    }
-
-    #vcomments-box #vcomments {
-        background-color: #fff;
-    }
-
-    .v .vlist .vcard .vh {
-        padding-right: 20px;
-    }
-
-    .v .vlist .vcard {
-        padding-left: 10px;
-    }
-</style>
-
-  
-
-  
-
-</article>
 </section>
       <footer class="footer">
   <div class="outer">
@@ -194,7 +112,7 @@
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" href="/archives">归档</a>
+      <a class="nav-item-link" href="/archives">所有文章</a>
     </li>
     
     <li class="nav-item">
@@ -203,14 +121,6 @@
     
     <li class="nav-item">
       <a class="nav-item-link" href="/tags">标签</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="/tags/%E6%97%85%E8%A1%8C/">旅行</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="http://shenyu-vip.lofter.com" target="_blank" rel="noopener">摄影</a>
     </li>
     
     <li class="nav-item">

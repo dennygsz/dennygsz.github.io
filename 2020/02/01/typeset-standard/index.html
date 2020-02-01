@@ -6,7 +6,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    新书发布预告 |  Hexo
+    Markdown 资料排版规范 |  Hexo
   </title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   
@@ -31,7 +31,7 @@
   <div id="app">
     <main class="content">
       <section class="outer">
-  <article id="post-post-for-my-book" class="article article-type-post" itemscope
+  <article id="post-typeset-standard" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -39,7 +39,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  新书发布预告
+  Markdown 资料排版规范
 </h1>
   
 
@@ -48,12 +48,12 @@
 
     
     <div class="article-meta">
-      <a href="/2020/02/01/post-for-my-book/" class="article-date">
-  <time datetime="2020-02-01T13:15:21.000Z" itemprop="datePublished">2020-02-01</time>
+      <a href="/2020/02/01/typeset-standard/" class="article-date">
+  <time datetime="2020-02-01T14:00:00.000Z" itemprop="datePublished">2020-02-01</time>
 </a>
       
   <div class="article-category">
-    <a class="article-category-link" href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a>
+    <a class="article-category-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
   </div>
 
       
@@ -63,7 +63,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">31字</span>
+            <span class="post-count">1.1k字</span>
         </span>
     </span>
 
@@ -72,7 +72,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">1分钟</span>
+            <span class="post-count">3分钟</span>
         </span>
     </span>
 </div>
@@ -83,6 +83,8 @@
 
     
     
+    <div class="tocbot"></div>
+
 
 
 
@@ -96,7 +98,89 @@
       
 
       
-      <p>我来给大家预告下，这几天宅在家里写了一本书，将在这几天发布在本站上！</p>
+      <blockquote>
+<p>本文主要是对 Markdown 资料排版的若干要求、建议。</p>
+</blockquote>
+<p>资料的内容很重要，但呈现的方式甚至更为重要。具体而言，这里所谓的「方式」应归结为两个层面：内容的组织结构，以及排版方式。</p>
+<h2 id="1-资料的组织结构"><a href="#1-资料的组织结构" class="headerlink" title="1 资料的组织结构"></a>1 资料的组织结构</h2><p>如果你正在编写一份资料，内容甚多，则你应该好好考虑资料的组织形式。例如，对同样一本书，这样的目录结构是较为清晰的：</p>
+<blockquote>
+<ul>
+<li>第一章 实数域与数列极限<ul>
+<li>1.1 实数集的构造<ul>
+<li>1.1.1 自然数集：Peano 公理</li>
+<li>1.1.2 整数集的构造</li>
+<li>1.1.3 有理数集的构造与性质</li>
+<li>1.1.4 实数集构造：分割方法</li>
+<li>1.1.5 实数集构造：完备数列方法</li>
+</ul>
+</li>
+<li>1.2 实数公理体系<ul>
+<li>1.2.1 Dedekind 公理与连续性公理</li>
+<li>1.2.2 确界定理与区间套定理</li>
+<li>…</li>
+</ul>
+</li>
+<li>1.3 数列及其极限<ul>
+<li>…</li>
+</ul>
+</li>
+<li>…</li>
+</ul>
+</li>
+<li>第二章 函数极限理论<ul>
+<li>…</li>
+</ul>
+</li>
+<li>第三章 连续函数理论</li>
+<li>第四章 一元微分学</li>
+<li>…</li>
+</ul>
+</blockquote>
+<p>相反地，以下这种目录则显然会使人「望而却步」：</p>
+<blockquote>
+<ul>
+<li>1 实数集的构造<ul>
+<li>1-1 自然数集</li>
+<li>1-2 Peano 公理</li>
+</ul>
+</li>
+<li>2 整数集与有理数集的构造</li>
+<li>3 实数集构造：分割方法<ul>
+<li>3-1 另一种方法：完备数列方法</li>
+<li>3-2 实数公理体系简述<ul>
+<li>3-2-1 第一类公理<ul>
+<li>3-2-1-1 第一类公理的特征</li>
+<li>…</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>4 Dedekind 公理<ul>
+<li>4-2 补充：连续性公理</li>
+</ul>
+</li>
+<li>…</li>
+</ul>
+</blockquote>
+<p>作为资料的编写者，你应该在编写资料之前事先规划各部分内容的层次（以目录作为一个指导标准）。通常而言，这样几种做法值得推荐：</p>
+<p><strong>「挂靠」已有章节</strong>. 编写某些课程的辅导资料时，可以直接依靠课程、课本的章节划分组织内容。这是最常见的一种做法；在此情况下，二级标题基本已经够用，不需要再向下划分太多的层次。</p>
+<p><strong>简单分类</strong>. 对于特定内容而编写的资料，可以简单分几类，将它们作为资料的一级标题。例如，要从以上例子所涉及的数学知识中抽取「实数公理体系简述」为主题，编写一本小册子。那么，可以根据这些公理（总计 7 – 9 个）的一些特征，将其分为两类或三类，分别分析；再加上「两类公理的联系与区别」、「绪论」、「总结」等循规蹈矩的内容，一份言简意赅、层次清晰的资料就已经初步浮现了。</p>
+<p><strong>三级标题系统</strong>. 这是一般情况下适用的原则，包括：</p>
+<ul>
+<li>标题不要超过三层，不要跨级（例如，一级标题下直接附属三级标题——这在 Markdown 文档中常常出现）。</li>
+<li>各层上的内容范畴大致同级。</li>
+<li>每一部分的专属内容（例如，一个二级标题的专属内容指：在某一二级标题下方，而没有归属于任何一个三级标题的内容）不要太多，且尽量平衡。</li>
+<li>最低级标题的总数可稍多些，但更高级的标题尽可能少。</li>
+<li>相近的内容应合并，泛化的概念应放在高级标题之下。</li>
+</ul>
+<blockquote>
+<p>以上所言的「一级标题」，不是指作品的名称、总标题，而是指目录下的第一级标题——通常所言的「章」。</p>
+</blockquote>
+<p>以上这些原则，「玄之又玄」，十分抽象。只有以一个普通读者的身份反复品味、分析自己的作品，并适当征求他人的看法，你才能在内容的组织能力上有所进步。</p>
+<h2 id="2-Markdown-文档排版规范"><a href="#2-Markdown-文档排版规范" class="headerlink" title="2 Markdown 文档排版规范"></a>2 Markdown 文档排版规范</h2><p>在总体的组织结构之外，文档内部的种种细节也应非常注意。在互联网上，一些资料不仅「长得漂亮」（样式精巧），内容也很赏心悦目；一些资料虽然没有华丽的外表，却给人一种清新、整洁的感受——例如这个<a href="https://yihui.name" target="_blank" rel="noopener">博客</a>中的页面。后者所依靠的，就是排版上的精雕细琢。</p>
+<p>作为资料的编写者，我们并不刻意追求排版的高质量；但是，我们应对资料的阅读者具有起码的尊重，不应拿模糊的公式截图来困扰读者，也不应该用随机分布的行间距、字间距、单词拼写和字体切换来降低读者的阅读效率。</p>
 
       
       <!-- 打赏 -->
@@ -107,10 +191,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/01/post-for-my-book/" data-id="ck63n2ohh000014o065ujf6bn"
+      <a data-url="http://yoursite.com/2020/02/01/typeset-standard/" data-id="ck63octmg00004go01cbq1hip"
         class="article-share-link">分享</a>
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LaTex/" rel="tag">LaTex</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a></li></ul>
 
     </footer>
 
@@ -120,19 +204,19 @@
   
   <nav class="article-nav">
     
-      <a href="/2020/02/01/typeset-standard/" class="article-nav-link">
+      <a href="/2020/02/01/latex-formula-beginner/" class="article-nav-link">
         <strong class="article-nav-caption">上一篇</strong>
         <div class="article-nav-title">
           
-            Markdown 资料排版规范
+            LaTeX 公式语法速成
           
         </div>
       </a>
     
     
-      <a href="/2020/02/01/hello-world/" class="article-nav-link">
+      <a href="/2020/02/01/post-for-my-book/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">Hello World</div>
+        <div class="article-nav-title">新书发布预告</div>
       </a>
     
   </nav>
