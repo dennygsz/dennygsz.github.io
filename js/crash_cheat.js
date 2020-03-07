@@ -1,17 +1,15 @@
-<!--������ƭ-->
- var OriginTitle = document.title;
- var titleTime;
- document.addEventListener('visibilitychange', function () {
-     if (document.hidden) {
-         $('[rel="icon"]').attr('href', "/img/TEP.ico");
-         document.title = '�q(��A��`)�r ҳ������� ~';
-         clearTimeout(titleTime);
-     }
-     else {
-         $('[rel="icon"]').attr('href', "/favicon.ico");
-         document.title = '(?>��<*?) ���ֺ���~' + OriginTitle;
-         titleTime = setTimeout(function () {
-             document.title = OriginTitle;
-         }, 2000);
-     }
- });
+var oldTitle = document.title;
+var titleTime; //���}�֏�Ӌ�r��
+document.addEventListener("visibilitychange", function () {
+  if (document.hidden) {
+    document.querySelector("[rel='icon']").setAttribute("href", "/images/icons/favicon-32x32-next.png");
+    document.title = "╭(°A°`)╮ 页面崩溃啦 ~";
+    clearTimeout(titleTime);
+  } else {
+    document.title = "(ฅ>ω<*ฅ) 噫又好了~";
+    document.querySelector("[rel='icon']").setAttribute("href", "/images/icons/favicon-32x32-next.png");
+    titleTime = setTimeout(function () {
+      document.title = oldTitle;
+    }, 1000);
+  }
+});
