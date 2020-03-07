@@ -24,7 +24,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="LaTeX 公式语法速成">
 <meta property="og:url" content="https://dennygsz.github.io/2020/02/01/latex-formula-beginner/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="Denny&#39;s Zonetopia">
 <meta property="og:description" content="说明：本文主要针对在 Markdown 中使用 LaTeX 公式的需求。  原则上，针对日常的资料编写工作而言，Markdown 所提供的「有限」功能已经绰绰有余，足以让我们编写出高质量、有内涵的作品。然而，有一项功能，Markdown 自身并不支持——数学公式与符号的编排、显示。 在 Markdown 中，数学公式必须引入外部的插件来实现。一般，我们采用 LaTeX 公式语法 来撰写公式的内容">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-02-01T14:04:00.000Z">
@@ -46,7 +46,7 @@
   };
 </script>
 
-  <title>LaTeX 公式语法速成 | Hexo</title>
+  <title>LaTeX 公式语法速成 | Denny's Zonetopia</title>
   
 
 
@@ -98,7 +98,7 @@
     <div>
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">Denny's Zonetopia</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -153,13 +153,13 @@
     <link itemprop="mainEntityOfPage" href="https://dennygsz.github.io/2020/02/01/latex-formula-beginner/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="Denny Gavin Zhang">
       <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Denny's Zonetopia">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -193,7 +193,21 @@
               </span>
               <span class="post-meta-item-text">阅读次数：</span>
               <span id="busuanzi_value_page_pv"></span>
-            </span><br>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/02/01/latex-formula-beginner/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/02/01/latex-formula-beginner/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
             <span class="post-meta-item" title="本文字数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-file-word-o"></i>
@@ -442,15 +456,6 @@
     
     
     
-      <div>
-  
-    <div>
-    
-        <div style="text-align:center;color: #ccc;font-size:14px;">-------------���Ľ���<i class="fa fa-paw"></i>��л�����Ķ�-------------</div>
-    
-</div>
-  
-       </div>
         <div class="reward-container">
   <div></div>
   <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
@@ -518,6 +523,7 @@
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -570,6 +576,8 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Denny Gavin Zhang"
+      src="/images/avatar.jpg">
   <p class="site-author-name" itemprop="name">Denny Gavin Zhang</p>
   <div class="site-description" itemprop="description"></div>
 </div>
@@ -594,6 +602,11 @@
       </div>
   </nav>
 </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/dennygsz" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;dennygsz" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+  </div>
 
 
 
@@ -706,6 +719,35 @@
   
 
   
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'vNaPI6NXns3GLUs68lef9T2W-gzGzoHsz',
+      appKey     : 'L69RksshHA5R6vntfQAb3QnM',
+      placeholder: "Just go go",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
 
 
 <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
